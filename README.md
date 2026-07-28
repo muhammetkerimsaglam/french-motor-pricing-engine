@@ -103,6 +103,9 @@ python train_model.py
 # Run the app
 streamlit run app.py
 ```
+## Testing
+pip install pytest
+pytest test_pricing_logic.py -v
 
 ---
 
