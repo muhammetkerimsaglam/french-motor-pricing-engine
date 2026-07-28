@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "freMTPL2freq (data_id=41214) + freMTPL2sev (data_id=41215), OpenML",
+    "frequency_model": "PoissonRegressor (sklearn), log link, weight=Exposure",
+    "severity_model": "GammaRegressor (sklearn), log link, weight=ClaimNb",
+    "note": "region ve claim_history proxy degiskenlerdir (Density, BonusMalus); README'de belirtilmelidir."
+  },
+  "base_frequency": 0.10818610064584008,
+  "base_severity": 1974.3466805534501,
+  "frequency_relativities": {
+    "driver_age": {
+      "31-55": 1.0,
+      "18-22": 1.619309440624534,
+      "23-30": 0.8255804743140018,
+      "55+": 1.0178223071546797
+    },
+    "engine_power": {
+      "Medium (75-120 HP)": 1.0,
+      "High (>120 HP)": 1.0550036702952337,
+      "Low (<75 HP)": 0.9152906986495429
+    },
+    "region": {
+      "Urban": 1.0,
+      "Metropolitan (Big City)": 1.1694192778546857,
+      "Rural": 0.8417000150417746
+    },
+    "claim_history": {
+      "1 Claim": 1.0,
+      "0 Claims (Max Discount)": 0.49771162787663403,
+      "2+ Claims": 2.9781912566059074
+    }
+  },
+  "severity_relativities": {
+    "driver_age": {
+      "31-55": 1.0,
+      "18-22": 1.5986083022531774,
+      "23-30": 1.0913268645438412,
+      "55+": 1.0750472066722294
+    },
+    "engine_power": {
+      "Medium (75-120 HP)": 1.0,
+      "High (>120 HP)": 0.9400292841183315,
+      "Low (<75 HP)": 0.8986285529510278
+    }
+  }
+}
