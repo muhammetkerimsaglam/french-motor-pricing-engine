@@ -88,6 +88,13 @@ motor-pricing-engine/
 
 ---
 
+## Not: pricing_logic.py vs pricing_logic_v1_rulebase.py
+`pricing_logic.py` — aktif v2 kodu, model_coefficients.json'dan gerçek 
+GLM katsayılarını okur, uygulama bunu kullanır.
+`pricing_logic_v1_rulebase.py` — referans amaçlı saklanan orijinal v1 
+(elle atanmış katsayılar), sadece "v1 vs v2" karşılaştırmasını 
+göstermek için tutulmuştur, uygulama tarafından import edilmez.
+
 ## 💻 Local Installation & Usage
 
 ```bash
